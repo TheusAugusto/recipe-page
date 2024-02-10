@@ -1,0 +1,235 @@
+@import url('https://fonts.googleapis.com/css2?family=Young+Serif&display=swap'); 
+
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&family=Young+Serif&display=swap');
+
+:root{
+      /* colors */
+      --Nutmeg:hsl(14, 45%, 36%);
+      --Dark-Raspberry:hsl(332, 51%, 32%);
+      --White:hsl(0, 0%, 100%);
+      --Rose-White:hsl(330, 100%, 98%);
+      --Eggshell:hsl(30, 54%, 90%);
+      --Light-Grey:hsl(30, 18%, 87%);
+      --Wenge-Brown:hsl(30, 10%, 34%);
+      --Dark-Charcoal:hsl(24, 5%, 18%);
+
+      /* Fonts :
+      youngserif: font-weight: 400
+      outfit: font-weight: 400, 600, 700
+      */
+}
+*{
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+}
+
+html{
+      font-family: "Outfit", sans-serif;
+      font-size: 16px;
+}
+
+hr{
+      border: 1px solid var(--Light-Grey);
+      margin-top: 1.56rem;
+}
+
+h1,h2{
+      font-family: "Young Serif", serif;
+      font-weight: 400;
+      margin-top: 1.687rem;
+      margin-bottom: 1.25rem;
+}
+
+h1{
+      color: var(--Dark-Charcoal);
+      font-size: 2.5rem; 
+}
+
+h2{
+      color: var(--Nutmeg);
+      font-size: 1.75rem;
+}
+article{
+      color: var(--Wenge-Brown);
+}
+
+.Ingredients > h2{
+      margin-bottom: 0.9375rem;
+}
+
+p{
+      color: var(--Wenge-Brown);
+      margin-top: 1.25rem;
+      margin-bottom: 2.5rem;
+}
+
+ body{
+      background-color: var(--Eggshell);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      margin-top: 6.25rem;
+      margin-bottom: 6.25rem;
+ }
+
+ main{
+      background-color: var(--White);
+      width: 46rem;
+      padding: 2.5rem;
+      border-radius: 1.56rem;
+ }
+
+ img{
+      width: 100%;  
+      border-radius: 0.9375rem; 
+   }
+
+   ul{
+      list-style:square outside;
+      line-height: 2.0625rem;
+   }
+
+   li{
+      padding-left: 1.25rem;
+   }
+
+   .preptime>ul>li::marker{
+      color: var(--Dark-Raspberry);
+      font-size: small;
+      text-align: center;
+   }
+
+ span{
+      color: var(--Dark-Raspberry);
+      font-size: 1.25rem;
+ }
+
+ .preptime > ul{
+      color: var(--Dark-Charcoal);
+      padding-top: 0.625rem;
+      margin-left: 1.875rem; 
+ }
+
+.preptime{
+      background-color: var(--Rose-White);
+      padding: 1.25rem;
+      border-radius: 0.9375rem;
+}
+
+.Ingredients > ul{
+      line-height: 2rem;
+      margin-left: 1.25rem; 
+}
+
+.Ingredients > ul>li::marker{
+      color: var(--Nutmeg);
+      font-size: small;
+      text-align: center; 
+}
+.instructions{
+      margin-top: 1.56rem;
+}
+
+.instructions>ol{
+      line-height: 1.78125rem;
+      margin-left: 1.25rem; 
+}
+
+ol>li::marker{
+      color: var(--Nutmeg); 
+      font-weight: 700;
+}
+
+caption{
+    text-align: left;
+    margin-bottom: 0.9375rem;
+}
+
+table{
+      width: 100%;
+      border-collapse: collapse;
+}
+
+tr{
+      border-bottom: 1px solid var(--Light-Grey);   
+}
+
+th{
+      color: var(--Nutmeg);
+      padding-left: 1.875rem; 
+      text-align: left;
+      line-height: 2.8125rem;
+}
+#first{
+      font-weight:400;
+      color: var(--Wenge-Brown);
+
+}
+tr:last-child{
+      border-bottom: 0;
+}
+
+@media(max-width:700px){
+      body{
+            margin: 0; 
+      }
+      main{
+            width: 25rem;
+            padding: 0;
+      }
+      h1,p,article{
+            padding: 0 3.3rem;
+      }
+
+      h1{
+            font-size: 2.2rem;
+            line-height:2.2rem ;
+      }
+
+      p{
+            line-height: 1.6rem;
+      }
+      .Ingredients>ul{
+            line-height: 1.9rem; 
+      }
+      .instructions>ol{
+            line-height: 1.59rem;
+      }
+   
+      img{
+            width: 100%;
+            border-radius: 0;
+      }
+
+      .preptime{
+            background-color: var(--Rose-White);
+            width: 77%;
+            padding-left: 0.75rem;
+            padding-top: 0.75rem;
+            padding-bottom: 0.95rem;
+            margin:0px auto ;
+            border-radius: 0.5375rem;
+      }
+
+      .preptime > ul{
+            color: var(--Dark-Charcoal);
+            padding-top: 0.925rem;
+            margin-left: 1.875rem;  
+            line-height: 1.75rem;
+       }
+
+       span{
+            padding-left: 0.75rem;
+       }
+}
+
+footer{
+     font-size: 0.6875rem; 
+     text-align: center; 
+}
+
+footer a{
+      color: hsl(228, 45%, 44%); 
+}
